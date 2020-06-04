@@ -1,0 +1,167 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Page6" xmlns:tnt="sap.tnt"
+	xmlns="sap.m" xmlns:layout="sap.ui.layout">
+	<tnt:ToolPage sideExpanded="true">
+		<tnt:header>
+			<tnt:ToolHeader height="50px" width="auto" design="Transparent" visible="true" enabled="true">
+				<tnt:content>
+					<Button text="" type="Default" icon="sap-icon://menu2" iconFirst="true" width="auto" enabled="true" visible="true"
+						tooltip="Toggle Side Navigation" press="_onToggleButtonPress"/>
+					<ToolbarSpacer width="20px"/>
+					<Button text="Home" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress"/>
+					<Button text="" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<ToolbarSpacer width=""/>
+					<ToolbarSpacer width=""/>
+					<Button text="Forum" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</tnt:content>
+			</tnt:ToolHeader>
+		</tnt:header>
+		<tnt:sideContent>
+			<tnt:SideNavigation visible="true">
+				<tnt:item>
+					<tnt:NavigationList width="auto" expanded="true">
+						<tnt:items>
+							<tnt:NavigationListItem icon="sap-icon://e-learning" expanded="true" hasExpander="true" text="OOP Programming" select="_onNavigationListItemSelect">
+								<tnt:items>
+									<tnt:NavigationListItem icon="" expanded="true" hasExpander="true" text="Events" select="_onNavigationListItemSelect1">
+										<tnt:items/>
+									</tnt:NavigationListItem>
+									<tnt:NavigationListItem icon="" expanded="true" hasExpander="true" text="Resources" select="_onNavigationListItemSelect2">
+										<tnt:items/>
+									</tnt:NavigationListItem>
+									<tnt:NavigationListItem icon="" expanded="true" hasExpander="true" text="Contacts" select="_onNavigationListItemSelect3">
+										<tnt:items/>
+									</tnt:NavigationListItem>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Documentation" select="_onNavigationListItemFirstLevelSelect"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Forum" select="_onNavigationListItemFirstLevelSelect1"/>
+								</tnt:items>
+							</tnt:NavigationListItem>
+							<tnt:NavigationListItem icon="sap-icon://e-learning" expanded="true" hasExpander="true" text="Procedural Programming">
+								<tnt:items>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Events" select="_onNavigationListItemSelect4"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Resources" select="_onNavigationListItemSelect5"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Contacts" select="_onNavigationListItemSelect3"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Documentation" select="_onNavigationListItemSelect6"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Forum" select="_onNavigationListItemFirstLevelSelect1"/>
+								</tnt:items>
+							</tnt:NavigationListItem>
+						</tnt:items>
+					</tnt:NavigationList>
+				</tnt:item>
+				<tnt:fixedItem>
+					<tnt:NavigationList width="auto" expanded="true">
+						<tnt:items>
+							<tnt:NavigationListItem icon="sap-icon://employee" expanded="true" hasExpander="true" text="Item 1">
+								<tnt:items/>
+							</tnt:NavigationListItem>
+							<tnt:NavigationListItem icon="sap-icon://building" expanded="true" hasExpander="true" text="Item 2">
+								<tnt:items/>
+							</tnt:NavigationListItem>
+							<tnt:NavigationListItem icon="sap-icon://card" expanded="true" hasExpander="true" text="Item 3">
+								<tnt:items/>
+							</tnt:NavigationListItem>
+						</tnt:items>
+					</tnt:NavigationList>
+				</tnt:fixedItem>
+				<tnt:footer/>
+			</tnt:SideNavigation>
+		</tnt:sideContent>
+		<tnt:mainContents>
+			<layout:BlockLayout background="Default" visible="true">
+				<layout:content>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="1" title="Forum" titleAlignment="Begin" titleLevel="H1">
+								<layout:content>
+									<Text text="Please leave here your questions related to the topic of this week" width="auto" maxLines="1" wrapping="false" textAlign="Begin"
+										textDirection="Inherit" visible="true"/>
+								</layout:content>
+							</layout:BlockLayoutCell>
+							<layout:BlockLayoutCell width="1" title="" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="4" title="" titleAlignment="Center" titleLevel="Auto">
+								<layout:content>
+									<Button text="Añadir Pregunta" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+										press="_onButtonPress1"/>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="4" title="Preguntas" titleAlignment="Begin" titleLevel="H3">
+								<layout:content>
+									<Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true"
+										class="sapUiResponsiveMargin">
+										<infoToolbar>
+											<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+												<content>
+													<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</content>
+											</Toolbar>
+										</infoToolbar>
+										<headerToolbar/>
+										<columns>
+											<Column width="300px" hAlign="Center" vAlign="Middle" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline"
+												mergeDuplicates="false">
+												<header>
+													<Text text="Autor" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</header>
+												<footer/>
+											</Column>
+											<Column width="auto" hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline"
+												mergeDuplicates="false">
+												<header>
+													<Text text="Secuencia" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</header>
+												<footer/>
+											</Column>
+											<Column width="auto" hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline"
+												mergeDuplicates="false">
+												<header>
+													<Text text="Fecha" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</header>
+												<footer/>
+											</Column>
+										</columns>
+										<items>
+											<ColumnListItem type="Active" press="_onRowPress">
+												<cells>
+													<ObjectIdentifier title="Alan Smith" text="" titleActive="false" visible="true"/>
+													<Text text="Pregunta 1" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													<ObjectNumber number="24/05/2020" unit="" emphasized="true" state="None"/>
+												</cells>
+											</ColumnListItem>
+											<ColumnListItem type="Active" press="_onRowPress1">
+												<cells>
+													<ObjectIdentifier title="Henry Johnson" text="" titleActive="false" visible="true"/>
+													<Text text="Pregunta 2" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													<ObjectNumber number="23/05/2020" unit="" emphasized="true" state="None"/>
+												</cells>
+											</ColumnListItem>
+											<ColumnListItem type="Active" press="_onRowPress2">
+												<cells>
+													<ObjectIdentifier title="Liam Williams" text="" titleActive="false" visible="true"/>
+													<Text text="Pregunta 3" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													<ObjectNumber number="22/05/2020" unit="" emphasized="true" state="None"/>
+												</cells>
+											</ColumnListItem>
+										</items>
+									</Table>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+				</layout:content>
+			</layout:BlockLayout>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+</mvc:View>

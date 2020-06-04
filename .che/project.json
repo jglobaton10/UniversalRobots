@@ -1,0 +1,13 @@
+{"type":"sap.web","builders":{"configs":{}},"runners":{"configs":{}},"attributes":{"sap.watt.common.setting":["{\"dataBinding\":{\"/webapp/view/Page1.view.xml\":{\"entitySet\":\"\"},\"/webapp/view/Page2.view.xml\":{\"entitySet\":\"\"},\"/webapp/view/Page3.view.xml\":{\"entitySet\":\"\"},\"/webapp/view/Page4.view.xml\":{\"entitySet\":\"\"},\"/webapp/view/Page5.view.xml\":{\"entitySet\":\"\"},\"/webapp/view/Page6.view.xml\":{\"entitySet\":\"\"},\"/webapp/view/Page7.view.xml\":{\"entitySet\":\"\"},\"/webapp/view/Page8.view.xml\":{\"entitySet\":\"\"},\"/webapp/view/Page9.view.xml\":{\"entitySet\":\"\"},\"/webapp/view/Page10.view.xml\":{\"entitySet\":\"\"},\"/webapp/view/Page11.view.xml\":{\"entitySet\":\"\"},\"/webapp/view/Page12.view.xml\":{\"entitySet\":\"\"},
+\"/webapp/view/Page13.view.xml\":{\"entitySet\":\"\"},
+\"/webapp/view/Page14.view.xml\":{\"entitySet\":\"\"},
+\"/webapp/view/Page15.view.xml\":{\"entitySet\":\"\"},
+\"/webapp/view/Page16.view.xml\":{\"entitySet\":\"\"},
+\"/webapp/view/Dialog4.view.xml\":{\"entitySet\":\"\"},
+\"/webapp/view/Dialog3.view.xml\":{\"entitySet\":\"\"},
+\"/webapp/view/Popover1.view.xml\":{\"entitySet\":\"\"},
+\"/webapp/view/QuickView1.view.xml\":{\"entitySet\":\"\"},
+\"/webapp/view/Dialog2.view.xml\":{\"entitySet\":\"\"},
+\"/webapp/view/Dialog1.view.xml\":{\"entitySet\":\"\"}},
+\"projectType\":[\"sap.watt.uitools.ide.web\",
+\"sap.watt.uitools.ide.fiori\"],\"generation\":[{\"templateId\":\"build_import_prototype\",\"templateVersion\":\"1.0.0\",\"dateTimeStamp\":\"Sun, 31 May 2020 22:08:29 GMT\"}],\"translation\":{\"translationDomain\":\"\",\"supportedLanguages\":\"en,fr,de\",\"defaultLanguage\":\"en\",\"defaultI18NPropertyFile\":\"i18n.properties\",\"resourceModelName\":\"i18n\"}}"]},"mixinTypes":[]}

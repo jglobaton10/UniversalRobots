@@ -1,0 +1,175 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Page5" xmlns:tnt="sap.tnt"
+	xmlns="sap.m" xmlns:layout="sap.ui.layout">
+	<tnt:ToolPage sideExpanded="true">
+		<tnt:header>
+			<tnt:ToolHeader height="50px" width="auto" design="Transparent" visible="true" enabled="true">
+				<tnt:content>
+					<Button text="" type="Default" icon="sap-icon://menu2" iconFirst="true" width="auto" enabled="true" visible="true"
+						tooltip="Toggle Side Navigation" press="_onToggleButtonPress"/>
+					<ToolbarSpacer width="20px"/>
+					<Button text="Home" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<ToolbarSpacer width=""/>
+					<ToolbarSpacer width=""/>
+					<Button text="Documentation" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</tnt:content>
+			</tnt:ToolHeader>
+		</tnt:header>
+		<tnt:sideContent>
+			<tnt:SideNavigation visible="true">
+				<tnt:item>
+					<tnt:NavigationList width="auto" expanded="true">
+						<tnt:items>
+							<tnt:NavigationListItem icon="sap-icon://e-learning" expanded="true" hasExpander="true" text="OOP Programming" select="_onNavigationListItemSelect">
+								<tnt:items>
+									<tnt:NavigationListItem icon="" expanded="true" hasExpander="true" text="Events" select="_onNavigationListItemSelect1">
+										<tnt:items/>
+									</tnt:NavigationListItem>
+									<tnt:NavigationListItem icon="" expanded="true" hasExpander="true" text="Resources" select="_onNavigationListItemSelect2">
+										<tnt:items/>
+									</tnt:NavigationListItem>
+									<tnt:NavigationListItem icon="" expanded="true" hasExpander="true" text="Contacts" select="_onNavigationListItemSelect3">
+										<tnt:items/>
+									</tnt:NavigationListItem>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Documentation" select="_onNavigationListItemFirstLevelSelect"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Forum" select="_onNavigationListItemFirstLevelSelect1"/>
+								</tnt:items>
+							</tnt:NavigationListItem>
+							<tnt:NavigationListItem icon="sap-icon://e-learning" expanded="true" hasExpander="true" text="Procedural Programming">
+								<tnt:items>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Events" select="_onNavigationListItemSelect4"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Resources" select="_onNavigationListItemSelect5"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Contacts" select="_onNavigationListItemSelect3"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Documentation" select="_onNavigationListItemSelect6"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Forum" select="_onNavigationListItemFirstLevelSelect1"/>
+								</tnt:items>
+							</tnt:NavigationListItem>
+						</tnt:items>
+					</tnt:NavigationList>
+				</tnt:item>
+				<tnt:fixedItem>
+					<tnt:NavigationList width="auto" expanded="true">
+						<tnt:items>
+							<tnt:NavigationListItem icon="sap-icon://employee" expanded="true" hasExpander="true" text="Item 1">
+								<tnt:items/>
+							</tnt:NavigationListItem>
+							<tnt:NavigationListItem icon="sap-icon://building" expanded="true" hasExpander="true" text="Item 2">
+								<tnt:items/>
+							</tnt:NavigationListItem>
+							<tnt:NavigationListItem icon="sap-icon://card" expanded="true" hasExpander="true" text="Item 3">
+								<tnt:items/>
+							</tnt:NavigationListItem>
+						</tnt:items>
+					</tnt:NavigationList>
+				</tnt:fixedItem>
+				<tnt:footer/>
+			</tnt:SideNavigation>
+		</tnt:sideContent>
+		<tnt:mainContents>
+			<layout:BlockLayout background="Default" visible="true">
+				<layout:content>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="2" title="Readings" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<Text
+										text="Object-oriented programming (OOP) is a programming paradigm based on the concept of &quot;objects&quot;, which can contain data, in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods). A feature of objects is an object's procedures that can access and often modify the data fields of the object with which they are associated (objects have a notion of &quot;this&quot; or &quot;self&quot;). In OOP, computer programs are designed by making them out of objects that interact with one another.[1][2]"
+										width="auto" maxLines="20" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</layout:content>
+							</layout:BlockLayoutCell>
+							<layout:BlockLayoutCell width="2" title="Links" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+										<layout:content>
+											<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+												<layout:content>
+													<Link href="https://en.wikipedia.org/wiki/Object-oriented_programming" text="OOP concept" textAlign="Begin" width="auto" target="_blank"
+														wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+												</layout:content>
+											</layout:BlockLayoutCell>
+											<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="H4">
+												<layout:content>
+													<Link href="https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/" text="OOP in java" textAlign="Begin"
+														width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+												</layout:content>
+											</layout:BlockLayoutCell>
+											<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+												<layout:content>
+													<Link href="https://www.techopedia.com/definition/3235/object-oriented-programming-oop" text="OOP concepts" textAlign="Begin" width="auto"
+														target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+												</layout:content>
+											</layout:BlockLayoutCell>
+										</layout:content>
+									</layout:BlockLayoutCell>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="2" title="Presentations" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<Text
+										text="Recently I came across a post I’ll paraphrase that stated bluntly, “Do not go into an interview talking about Object Oriented language if you do not know what encapsulation and polymorphism are and what they’re used for.” I thought to myself that it was a worthy challenge for the day. In the below brief discussion we will cover the basics of these two key facets of Object Oriented Programming (OOP) and their applications in both reality and code."
+										width="auto" maxLines="20" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</layout:content>
+							</layout:BlockLayoutCell>
+							<layout:BlockLayoutCell width="2" title="Links" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+										<layout:content>
+											<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+												<layout:content>
+													<Link href="http://people.cs.aau.dk/~torp/Teaching/E03/OOP/handouts/introduction.pdf" text="Introduction to OOP" textAlign="Begin"
+														width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+												</layout:content>
+											</layout:BlockLayoutCell>
+											<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="H4">
+												<layout:content>
+													<Link href="https://www.cl.cam.ac.uk/teaching/0910/OOProg/OOP.pdf" text="OOP fundamentals" textAlign="Begin" width="auto" target="_blank"
+														wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+												</layout:content>
+											</layout:BlockLayoutCell>
+										</layout:content>
+									</layout:BlockLayoutCell>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="2" title="Video" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<Text
+										text="Through this tutorial you will learn the following topics: 1. Object-Oriented Programming 2. OOPs vs Procedural Programming 3. OOPs Concepts: 4. Inheritance 5. Polymorphism 6. Abstraction 7. Encapsulation"
+										width="auto" maxLines="20" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</layout:content>
+							</layout:BlockLayoutCell>
+							<layout:BlockLayoutCell width="2" title="Links" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+										<layout:content>
+											<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+												<layout:content>
+													<Link href="https://www.youtube.com/watch?v=7GwptabrYyk" text="OOP advanced concepts" textAlign="Begin" width="auto" target="_blank"
+														wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+												</layout:content>
+											</layout:BlockLayoutCell>
+											<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="H4">
+												<layout:content>
+													<Link text="topic 1" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false"
+														subtle="false"/>
+												</layout:content>
+											</layout:BlockLayoutCell>
+										</layout:content>
+									</layout:BlockLayoutCell>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+				</layout:content>
+			</layout:BlockLayout>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+</mvc:View>

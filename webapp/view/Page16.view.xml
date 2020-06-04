@@ -1,0 +1,155 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Page16" xmlns:tnt="sap.tnt"
+	xmlns="sap.m" xmlns:layout="sap.ui.layout">
+	<tnt:ToolPage sideExpanded="true">
+		<tnt:header>
+			<tnt:ToolHeader height="50px" width="auto" design="Transparent" visible="true" enabled="true">
+				<tnt:content>
+					<Button text="" type="Default" icon="sap-icon://menu2" iconFirst="true" width="auto" enabled="true" visible="true"
+						tooltip="Toggle Side Navigation" press="_onToggleButtonPress"/>
+					<ToolbarSpacer width="20px"/>
+					<Button text="Home" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<ToolbarSpacer width=""/>
+					<ToolbarSpacer width=""/>
+					<Button text="Documentation" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</tnt:content>
+			</tnt:ToolHeader>
+		</tnt:header>
+		<tnt:sideContent>
+			<tnt:SideNavigation visible="true">
+				<tnt:item>
+					<tnt:NavigationList width="auto" expanded="true">
+						<tnt:items>
+							<tnt:NavigationListItem icon="sap-icon://e-learning" expanded="true" hasExpander="true" text="OOP Programming" select="_onNavigationListItemSelect">
+								<tnt:items>
+									<tnt:NavigationListItem icon="" expanded="true" hasExpander="true" text="Events" select="_onNavigationListItemSelect1">
+										<tnt:items/>
+									</tnt:NavigationListItem>
+									<tnt:NavigationListItem icon="" expanded="true" hasExpander="true" text="Resources" select="_onNavigationListItemSelect2">
+										<tnt:items/>
+									</tnt:NavigationListItem>
+									<tnt:NavigationListItem icon="" expanded="true" hasExpander="true" text="Contacts" select="_onNavigationListItemSelect3">
+										<tnt:items/>
+									</tnt:NavigationListItem>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Documentation" select="_onNavigationListItemFirstLevelSelect"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Forum" select="_onNavigationListItemFirstLevelSelect1"/>
+								</tnt:items>
+							</tnt:NavigationListItem>
+							<tnt:NavigationListItem icon="sap-icon://e-learning" expanded="true" hasExpander="true" text="Procedural Programming">
+								<tnt:items>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Events" select="_onNavigationListItemSelect4"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Resources" select="_onNavigationListItemSelect5"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Contacts" select="_onNavigationListItemSelect3"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Documentation" select="_onNavigationListItemSelect6"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Forum" select="_onNavigationListItemFirstLevelSelect1"/>
+								</tnt:items>
+							</tnt:NavigationListItem>
+						</tnt:items>
+					</tnt:NavigationList>
+				</tnt:item>
+				<tnt:fixedItem>
+					<tnt:NavigationList width="auto" expanded="true">
+						<tnt:items>
+							<tnt:NavigationListItem icon="sap-icon://employee" expanded="true" hasExpander="true" text="Item 1">
+								<tnt:items/>
+							</tnt:NavigationListItem>
+							<tnt:NavigationListItem icon="sap-icon://building" expanded="true" hasExpander="true" text="Item 2">
+								<tnt:items/>
+							</tnt:NavigationListItem>
+							<tnt:NavigationListItem icon="sap-icon://card" expanded="true" hasExpander="true" text="Item 3">
+								<tnt:items/>
+							</tnt:NavigationListItem>
+						</tnt:items>
+					</tnt:NavigationList>
+				</tnt:fixedItem>
+				<tnt:footer/>
+			</tnt:SideNavigation>
+		</tnt:sideContent>
+		<tnt:mainContents>
+			<layout:BlockLayout background="Default" visible="true">
+				<layout:content>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="2" title="Readings" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<Text
+										text="Procedural programming is a programming paradigm, derived from structured programming, based on the concept of the procedure call. Procedures, also known as routines, subroutines, or functions, simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a program's execution, including by other procedures or itself. The first major procedural programming languages appeared circa 1957–1964, including Fortran, ALGOL, COBOL, PL/I and BASIC.[1] Pascal and C were published circa 1970–1972."
+										width="auto" maxLines="20" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</layout:content>
+							</layout:BlockLayoutCell>
+							<layout:BlockLayoutCell width="2" title="Links" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+										<layout:content>
+											<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+												<layout:content>
+													<Link href="https://en.wikipedia.org/wiki/Procedural_programming" text="Procedural programming concept" textAlign="Begin" width="auto" target="_blank"
+														wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+												</layout:content>
+											</layout:BlockLayoutCell>
+											<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="H4">
+												<layout:content>
+													<Link href="https://www.geeksforgeeks.org/differences-between-procedural-and-object-oriented-programming/" text="Differences between Procedural and Object Oriented Programming" textAlign="Begin"
+														width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+												</layout:content>
+											</layout:BlockLayoutCell>
+											<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+												<layout:content>
+													<Link href="https://hackr.io/blog/procedural-programming" text="Procedural programming concepts" textAlign="Begin" width="auto"
+														target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+												</layout:content>
+											</layout:BlockLayoutCell>
+										</layout:content>
+									</layout:BlockLayoutCell>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="2" title="Presentations" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<Text
+										text="Recently I came across a post I’ll paraphrase that stated bluntly, “Do not go into an interview talking about Procedural language if you do not know what encapsulation and polymorphism are and what they’re used for.” I thought to myself that it was a worthy challenge for the day. In the below brief discussion we will cover the basics of these two key facets of Object Oriented Programming (OOP) and their applications in both reality and code."
+										width="auto" maxLines="20" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="2" title="Video" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<Text
+										text="Through this tutorial you will learn the following topics: 1. Procedural Programming 2. OOPs vs Procedural Programming"
+										width="auto" maxLines="20" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</layout:content>
+							</layout:BlockLayoutCell>
+							<layout:BlockLayoutCell width="2" title="Links" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+										<layout:content>
+											<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+												<layout:content>
+													<Link href="https://www.youtube.com/watch?v=Owtm1WrI6QE" text="Introduction to Procedural programming" textAlign="Begin" width="auto" target="_blank"
+														wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+												</layout:content>
+											</layout:BlockLayoutCell>
+											<layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="H4">
+												<layout:content>
+													<Link text="topic 1" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false"
+														subtle="false"/>
+												</layout:content>
+											</layout:BlockLayoutCell>
+										</layout:content>
+									</layout:BlockLayoutCell>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+				</layout:content>
+			</layout:BlockLayout>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+</mvc:View>

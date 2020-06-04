@@ -1,0 +1,156 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Page3" xmlns:tnt="sap.tnt"
+	xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:richtexteditor="sap.ui.richtexteditor">
+	<tnt:ToolPage sideExpanded="true">
+		<tnt:header>
+			<tnt:ToolHeader height="50px" width="auto" design="Transparent" visible="true" enabled="true">
+				<tnt:content>
+					<Button text="" type="Default" icon="sap-icon://menu2" iconFirst="true" width="auto" enabled="true" visible="true"
+						tooltip="Toggle Side Navigation" press="_onToggleButtonPress"/>
+					<ToolbarSpacer width="20px"/>
+					<Button text="Home" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress"/>
+					<Button text="" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<ToolbarSpacer width=""/>
+					<ToolbarSpacer width=""/>
+					<Button text="Resources" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</tnt:content>
+			</tnt:ToolHeader>
+		</tnt:header>
+		<tnt:sideContent>
+			<tnt:SideNavigation visible="true">
+				<tnt:item>
+					<tnt:NavigationList width="auto" expanded="true">
+						<tnt:items>
+							<tnt:NavigationListItem icon="sap-icon://e-learning" expanded="true" hasExpander="true" text="OOP Programing" select="_onNavigationListItemSelect">
+								<tnt:items>
+									<tnt:NavigationListItem icon="" expanded="true" hasExpander="true" text="Events" select="_onNavigationListItemSelect1">
+										<tnt:items/>
+									</tnt:NavigationListItem>
+									<tnt:NavigationListItem icon="" expanded="true" hasExpander="true" text="Resources" select="_onNavigationListItemSelect2">
+										<tnt:items/>
+									</tnt:NavigationListItem>
+									<tnt:NavigationListItem icon="" expanded="true" hasExpander="true" text="Contacts" select="_onNavigationListItemSelect3">
+										<tnt:items/>
+									</tnt:NavigationListItem>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Documentation" select="_onNavigationListItemFirstLevelSelect"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Forum" select="_onNavigationListItemFirstLevelSelect1"/>
+								</tnt:items>
+							</tnt:NavigationListItem>
+							<tnt:NavigationListItem icon="sap-icon://e-learning" expanded="true" hasExpander="true" text="Procedural Programming">
+								<tnt:items>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Events" select="_onNavigationListItemSelect4"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Resources" select="_onNavigationListItemSelect5"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Contacts" select="_onNavigationListItemSelect3"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Documentation" select="_onNavigationListItemSelect6"/>
+									<tnt:NavigationListItem expanded="true" hasExpander="true" text="Forum" select="_onNavigationListItemFirstLevelSelect1"/>
+								</tnt:items>
+							</tnt:NavigationListItem>
+						</tnt:items>
+					</tnt:NavigationList>
+				</tnt:item>
+				<tnt:fixedItem>
+					<tnt:NavigationList width="auto" expanded="true">
+						<tnt:items>
+							<tnt:NavigationListItem icon="sap-icon://employee" expanded="true" hasExpander="true" text="Item 1">
+								<tnt:items/>
+							</tnt:NavigationListItem>
+							<tnt:NavigationListItem icon="sap-icon://building" expanded="true" hasExpander="true" text="Item 2">
+								<tnt:items/>
+							</tnt:NavigationListItem>
+							<tnt:NavigationListItem icon="sap-icon://card" expanded="true" hasExpander="true" text="Item 3">
+								<tnt:items/>
+							</tnt:NavigationListItem>
+						</tnt:items>
+					</tnt:NavigationList>
+				</tnt:fixedItem>
+				<tnt:footer/>
+			</tnt:SideNavigation>
+		</tnt:sideContent>
+		<tnt:mainContents>
+			<layout:BlockLayout background="Default" visible="true">
+				<layout:content>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="1" title="Object oriented programming (OOP)" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+									<layout:BlockLayoutCell width="2" title="Key concepts" titleAlignment="Begin" titleLevel="Auto">
+										<layout:content>
+											<List mode="SingleSelectMaster" width="100%" headerText="Header" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true"
+												growingThreshold="20" growingScrollToLoad="true" visible="true">
+												<infoToolbar>
+													<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+														<content>
+															<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+														</content>
+													</Toolbar>
+												</infoToolbar>
+												<headerToolbar>
+													<Toolbar enabled="true" visible="true" width="" design="Solid">
+														<content/>
+													</Toolbar>
+												</headerToolbar>
+												<items>
+													<StandardListItem icon="sap-icon://message-success" title="Encapsulation" description="Description 1" info="Info 1" infoState="None"
+														type="Active" selected="false" visible="true" press="_onStandardListItemPress"/>
+													<StandardListItem icon="sap-icon://message-success" title="Inheritance" description="Description 2" info="Info 2" infoState="Success"
+														type="Active" selected="false" visible="true"/>
+													<StandardListItem icon="sap-icon://message-success" title="Abstraction" description="Description 3" info="Info 3" infoState="Error"
+														type="Active" selected="false" visible="true"/>
+													<StandardListItem icon="sap-icon://message-success" title="Polymosphism" description="Description" info="Info" infoState="None"
+														type="Active" selected="false" visible="true"/>
+												</items>
+											</List>
+										</layout:content>
+									</layout:BlockLayoutCell>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="2" title="Common mistakes" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<List mode="SingleSelectMaster" width="100%" headerText="Header" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true"
+										growingThreshold="20" growingScrollToLoad="true" visible="true">
+										<infoToolbar>
+											<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+												<content>
+													<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</content>
+											</Toolbar>
+										</infoToolbar>
+										<headerToolbar>
+											<Toolbar enabled="true" visible="true" width="" design="Solid">
+												<content/>
+											</Toolbar>
+										</headerToolbar>
+										<items>
+											<StandardListItem icon="sap-icon://message-success" title="Ambiguous variables" description="Description 1" info="Info 1" infoState="None"
+												type="Active" selected="false" visible="true" press="_onStandardListItemPress1"/>
+											<StandardListItem icon="sap-icon://message-success" title="Misleading functions" description="Description 2" info="Info 2"
+												infoState="Success" type="Active" selected="false" visible="true"/>
+											<StandardListItem icon="sap-icon://message-success" title="Overly descriptive variables" description="Description 3" info="Info 3"
+												infoState="Error" type="Active" selected="false" visible="true"/>
+										</items>
+									</List>
+								</layout:content>
+							</layout:BlockLayoutCell>
+							<layout:BlockLayoutCell width="2" title="Code examples" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<richtexteditor:RichTextEditor
+										id="sap_tnt_ToolPageWithSideNav_0-mainContents-sap_ui_layout_BlockLayout-1588615382483-content-sap_ui_layout_BlockLayoutRow-2-content-sap_ui_layout_BlockLayoutCell-1588616594847-content-sap_ui_richtexteditor_RichTextEditor-1588617262683"
+										width="100%" height="300px"
+										value="class Dog: # Class Attribute species = 'mammal' # Initializer / Instance Attributes def __init__(self, name, age): self.name = name self.age = age"
+										showGroupFontStyle="true" showGroupTextAlign="true" showGroupFont="true" showGroupStructure="true" showGroupLink="true"
+										showGroupInsert="true" showGroupClipboard="true" required="false" editable="true" visible="true" class="sapUiCompSmartMultiEditSmartField"
+										editorType="TinyMCE4" customToolbar="true"/>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+				</layout:content>
+			</layout:BlockLayout>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+</mvc:View>
